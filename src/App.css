@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #F5F7FA;
+  margin: 0;
+  color: #1E293B;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 32px 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background: #2563eb;
+  padding: 32px 0 24px 0;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header h2 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.autocomplete-header {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+.autocomplete-header input {
+  width: 100%;
+  padding: 14px 46px 14px 16px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  outline: none;
+  background: #fff;
+}
+
+.autocomplete-header .search-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2563eb;
+  font-size: 1.3rem;
+  pointer-events: none;
+}
+
+.suggestion-dropdown {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 0 0 8px 8px;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 4px 16px rgba(30,41,59,0.08);
+  margin-top: 2px;
+}
+
+.suggestion-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  color: #1E293B;
+  font-size: 1rem;
+  transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.suggestion-item:hover {
+  background: #F5F7FA;
+}
+
+main {
+  display: flex;
+  gap: 36px;
+}
+
+.filter-panel {
+  width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 18px;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 1px solid #E5E7EB;
+}
+
+.filter-header {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2563eb;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+}
+
+.specialty-list {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-panel label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #1E293B;
+  cursor: pointer;
+}
+
+.filter-panel input[type="radio"]:checked + span,
+.filter-panel input[type="checkbox"]:checked + span {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.doctor-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 0;
+}
+
+.doctor-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 22px;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.07);
+  border: 1px solid #E5E7EB;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.doctor-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #F5F7FA;
+  border: 2px solid #E5E7EB;
+}
+
+.doctor-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.doctor-name {
+  font-weight: 600;
+  font-size: 1.13rem;
+  color: #1E293B;
+}
+
+.doctor-specialty {
+  color: #2563eb;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.doctor-experience,
+.doctor-fee {
+  font-size: 0.97rem;
+  color: #64748B;
+}
+
+.book-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+.book-btn:hover {
+  background: #1d4ed8;
+}
+/* New styles for detailed doctor cards */
+.doctor-languages, 
+.doctor-introduction,
+.doctor-clinic {
+  font-size: 0.9rem;
+  color: #64748B;
+  margin-top: 6px;
+}
+
+.doctor-introduction {
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #475569;
+}
+
+.clinic-address {
+  margin-top: 4px;
+  font-size: 0.85rem;
+}
+
+.consultation-options {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.consult-badge {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.consult-badge.video {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.consult-badge.clinic {
+  background: #e0e7ff;
+  color: #4f46e5;
 }
