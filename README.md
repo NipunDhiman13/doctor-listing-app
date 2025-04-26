@@ -25,7 +25,7 @@ This is a modern, responsive Doctor Listing web application built with React.
 
 ## Screenshots
 
-![Filter Panel Screenshot](https://pplx-res.cloudinary.com/image/private/user_uploads/QWYFQHXDjwDiqza/Screenshot-2025-04-25-174743.jpg)
+![Filter Panel Screenshot](webpageimage.png)
 
 ---
 
