@@ -9,6 +9,12 @@ This is a modern, responsive Doctor Listing web application built with React.
 
 ---
 
+## Screenshots
+
+![Filter Panel Screenshot](webpageimage.png)
+
+---
+
 ## Features
 
 - **Autocomplete Search:** Search doctors by name with instant suggestions.
@@ -21,13 +27,6 @@ This is a modern, responsive Doctor Listing web application built with React.
 - **URL Query Sync:** Filters and search state are reflected in the URL for easy sharing and navigation.
 - **Frontend Only:** All filtering, searching, and sorting are performed client-side after the initial API call.
 
----
-
-## Screenshots
-
-![Filter Panel Screenshot](webpageimage.png)
-
----
 
 ## Tech Stack
 
