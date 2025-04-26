@@ -1,74 +1,77 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 🚀 [Doctor Listing App (Live Demo)](https://doctor-listing-app-rust.vercel.app/?)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Doctor Listing App
 
-In the project directory, you can run:
+This is a modern, responsive Doctor Listing web application built with React.  
+**It was developed as part of the Bajaj interview process.**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Autocomplete Search:** Search doctors by name with instant suggestions.
+- **Filter Panel:**
+  - **Consultation Type:** Filter by Video Consult or In Clinic.
+  - **Speciality:** Multi-select from a list of medical specialties.
+  - **Sort Options:** Sort doctors by Fees (Low to High) or Experience (High to Low).
+- **Doctor Details:** Each card shows the doctor's name, specialties, experience, fees, languages spoken, introduction, clinic details, and available consultation modes.
+- **Responsive UI:** Clean, minimal, and mobile-friendly design.
+- **URL Query Sync:** Filters and search state are reflected in the URL for easy sharing and navigation.
+- **Frontend Only:** All filtering, searching, and sorting are performed client-side after the initial API call.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![Filter Panel Screenshot](https://pplx-res.cloudinary.com/image/private/user_uploads/QWYFQHXDjwDiqza/Screenshot-2025-04-25-174743.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://reactjs.org/) (with functional components and hooks)
+- [Vercel](https://vercel.com/) for deployment
+- [Netlify](https://www.netlify.com/) and [GitHub Pages](https://pages.github.com/) compatible
+- Fetches doctor data from a public [JSON API](https://srijandubey.github.io/campus-api-mock/SRM-C1-25.json)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
+git clone https://github.com/yourusername/doctor-listing-app.git
+cd doctor-listing-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+text
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install dependencies:**
+npm install
 
-## Learn More
+text
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Start the development server:**
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+text
+The app will open at [http://localhost:3000](http://localhost:3000).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to Deploy
 
-### Analyzing the Bundle Size
+This app is already deployed at:  
+**[https://doctor-listing-app-rust.vercel.app/?](https://doctor-listing-app-rust.vercel.app/?)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To deploy your own version:
+- Push your code to GitHub.
+- Go to [Vercel](https://vercel.com/), import your repo, and click "Deploy".
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## About
 
-### Advanced Configuration
+This project was created by Nipun as part of the **Bajaj interview process**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# doctor-listing-app
->>>>>>> 286aed1f2ee433b7956581daa3df4397055a2630
+---
